@@ -23,7 +23,7 @@
       <button onclick="changeTitle('Smart Page')">
         change the document title
       </button>
-
+      <button onclick="changeUrls()">Click to get new link</button>
       <button onclick="addClassToTitle()">Click to add newClass</button>
 
       <button onclick="changePcontent()">Change the paragraph text</button>
@@ -96,6 +96,8 @@
       */
 
       const changeUrls = function () {
+        let changeLinkDestination = document.querySelector("a");
+        changeLinkDestination.innerHTML = "https://www.google.com";
         //
       };
 
