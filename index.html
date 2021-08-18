@@ -65,7 +65,7 @@
     </main>
 
     <footer>
-      <p>And this text is just for the exercise too!</p>
+      <p onclick="changeFooterText(event)">And this text is just for the exercise too!</p>
     </footer>
 
     <script>
@@ -172,8 +172,9 @@
       Change the footer text with something else when the user clicks on it.
       */
 
-      const changeFooterText = function () {
-        
+      const changeFooterText = function (eventD) {
+        let clickChangeFooterText = document.querySelector('footer > p')
+        clickChangeFooterText.innerText = "yup! i have been clicked"
         //
       };
 
@@ -182,6 +183,7 @@
       */
 
       const inputField = document.getElementById("input-field");
+      
       // ...
 
       /* EXERCISE 12
