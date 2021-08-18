@@ -29,6 +29,10 @@
         Add new item to SecondList
       </button>
       <button onclick="changePcontent()">Change the paragraph text</button>
+      <button onclick="addParagraph('this is a new paragraph')">
+        <button onclick="firstUlDisappear()">
+        make firstlist disappear
+      </button>
 
       <ul id="firstList">
         <li>1st</li>
@@ -109,7 +113,9 @@
 
       const addToTheSecond = function (content) {
         let newListAdded = document.getElementById("secondList");
-        newListAdded.
+        let newItem = document.createElement("li");
+        newItem.innerHTML = content;
+        newListAdded.appendChild(newItem);
 
         //
       };
@@ -119,6 +125,10 @@
       */
 
       const addParagraph = function (content) {
+        let newParagraph = document.querySelector("div > p");
+        let addNewParagrap = document.createElement("p");
+        addNewParagrap.innerText = content;
+        newParagraph.appendChild(addNewParagrap);
         //
       };
 
@@ -127,6 +137,8 @@
       */
 
       const firstUlDisappear = function () {
+        let ulDisappear = document.querySelector("ul");
+        ulDisappear.remove()
         //
       };
 
