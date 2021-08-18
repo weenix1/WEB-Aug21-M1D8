@@ -20,16 +20,13 @@
 
     <main>
       <hr />
-      <button onclick="changeTitle('hello')">change the document title</button>
-      <input
-        onclick="toggleAllHeaders()"
-        type="button"
-        value="Toggle all H2 tags"
-      />
+      <button onclick="changeTitle('Smart Page')">
+        change the document title
+      </button>
 
-      <button onclick="addClassToTitle()">CLICK ME</button>
+      <button onclick="addClassToTitle()">Click to add newClass</button>
 
-      <button onclick="createNewElement(event)">Toggle new element</button>
+      <button onclick="changePcontent()">Change the paragraph text</button>
 
       <ul id="firstList">
         <li>1st</li>
@@ -88,6 +85,9 @@
       */
 
       const changePcontent = function () {
+        let changeParagraph = document.querySelector("p");
+        changeParagraph.innerText =
+          "This is a new text to provide that it works";
         //
       };
 
