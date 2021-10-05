@@ -151,10 +151,10 @@
 
       const paintItGreen = function () {
         let addUlColor = document.querySelectorAll('ul')
-        addUlColor.body.style.backgroundColor = "green";
-        
-       
-         
+        for(let ul of addUlColor){
+          ul.style.backgroundColor = "green";
+        }
+    
         //
       };
 
